@@ -1,32 +1,17 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
-  Grid,
-  Calendar,
   Users,
-  BarChart3,
-  Settings,
-  MessageSquare,
-  LogOut,
   Bell,
   ChevronDown,
   User,
   Stethoscope,
   UserPlus,
-  Clock,
 } from "lucide-react";
+
+import { Sidebar } from "./Sidebar";
 
 export default function Dashboard() {
   const [selectedMenuItem, setSelectedMenuItem] = useState("Dashboard");
-
-  const menuItems = [
-    { icon: Grid, label: "Dashboard", active: true },
-    { icon: Calendar, label: "Appointment" },
-    { icon: Users, label: "Patient" },
-    { icon: BarChart3, label: "Report" },
-    { icon: MessageSquare, label: "Complaints" },
-    { icon: Settings, label: "Setting" },
-  ];
-
   const appointments = [
     {
       time: "08:30 am - 10:30 am",
@@ -48,67 +33,7 @@ export default function Dashboard() {
   return (
     <div className="flex h-screen bg-gray-50">
       {/* Sidebar */}
-      <div className="w-64 bg-white shadow-sm">
-        {/* Logo */}
-        <div className="p-6 border-b">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-              <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
-                <span className="text-white text-xs font-bold">+</span>
-              </div>
-            </div>
-            <span className="font-semibold text-gray-900">
-              Open Health care
-            </span>
-          </div>
-        </div>
-
-        {/* Navigation */}
-        <nav className="p-4">
-          <ul className="space-y-2">
-            {menuItems.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <li key={index}>
-                  <button
-                    onClick={() => setSelectedMenuItem(item.label)}
-                    className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-colors ${
-                      item.active
-                        ? "bg-blue-500 text-white"
-                        : "text-gray-600 hover:bg-gray-100"
-                    }`}
-                  >
-                    <Icon className="w-5 h-5" />
-                    <span className="font-medium">{item.label}</span>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-
-        <div className="px-4 pb-4">
-          <button className="w-full flex items-center space-x-3 px-4 py-3 text-red-600 hover:bg-red-50 rounded-lg transition-colors">
-            <LogOut className="w-5 h-5" />
-            <span className="font-medium">Logout</span>
-          </button>
-        </div>
-
-        {/* User Profile */}
-        <div className="">
-          <div className="flex items-center space-x-3 p-3 bg-gray-50">
-            <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
-              <User className="w-5 h-5 text-white" />
-            </div>
-            <div className="flex-1">
-              <p className="font-medium text-gray-900">Eleanor Pena</p>
-              <p className="text-sm text-gray-500">Doctor</p>
-            </div>
-            <ChevronDown className="w-4 h-4 text-gray-400" />
-          </div>
-        </div>
-      </div>
-
+     <Sidebar />
       {/* Main Content */}
       <div className="flex-1 overflow-auto">
         {/* Header */}

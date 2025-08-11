@@ -2,8 +2,16 @@ import { Bell } from "lucide-react";
 import { Sidebar } from "./Sidebar";
 import { StartCards } from "./StartCards";
 import { RightSidebar } from "./RightSidebar";
+import { useState } from "react";
+import Prescription from "./Prescription";
+import SeatBookingForm from "./SeatBookingForm";
 
 export default function Dashboard() {
+  const [currentComponent, setCurrentComponent] = useState("Dashboard"); // New state to track the active component
+
+  const handleComponentChange = (component) => {
+    setCurrentComponent(component); // Change the active component
+  };
   return (
     <div className="flex h-screen bg-white">
       {/* Sidebar */}
@@ -20,12 +28,20 @@ export default function Dashboard() {
 
         {/* Content */}
         <div className="p-6 border-x border-t">
-          <div className="grid grid-cols-12 gap-6">
-            {/* Stats Cards */}
-            <StartCards />
-            {/* Right Sidebar */}
-            <RightSidebar />
-          </div>
+          {/* Conditionally render the component based on the state */}
+          {currentComponent === "Dashboard" && (
+            <div className="grid grid-cols-12 gap-6">
+              {/* Stats Cards */}
+              <StartCards />
+              {/* Right Sidebar */}
+              <RightSidebar handleComponentChange={handleComponentChange} />
+            </div>
+          )}
+
+          {currentComponent === "Prescription" && (
+            <Prescription handleComponentChange={handleComponentChange} />
+          )}
+          {currentComponent === "BookSeat" && <SeatBookingForm />}
         </div>
       </div>
     </div>

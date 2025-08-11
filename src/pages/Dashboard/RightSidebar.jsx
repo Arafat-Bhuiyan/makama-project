@@ -1,7 +1,7 @@
 import DonutChart from "./DonutChart";
 import { ChevronDown } from "lucide-react";
 
-export const RightSidebar = () => {
+export const RightSidebar = ({ handleComponentChange }) => {
   const appointments = [
     {
       time: "08:30 am - 10:30 am",
@@ -23,10 +23,16 @@ export const RightSidebar = () => {
     <div className="col-span-4 space-y-6 border-l p-3">
       {/* Action Buttons */}
       <div className="space-y-3">
-        <button className="w-full bg-blue-100 text-blue-600 py-3 px-4 rounded-lg font-medium hover:bg-blue-200 transition-colors">
+        <button
+          onClick={() => handleComponentChange("Prescription")}
+          className="w-full bg-blue-100 text-blue-600 py-3 px-4 rounded-lg font-medium hover:bg-blue-200 shadow-md transition-colors"
+        >
           Create Prescription
         </button>
-        <button className="w-full bg-blue-100 text-blue-600 py-3 px-4 rounded-lg font-medium hover:bg-blue-200 transition-colors">
+        <button
+          onClick={() => handleComponentChange("BookSeat")}
+          className="w-full bg-blue-100 text-blue-600 py-3 px-4 rounded-lg font-medium hover:bg-blue-200 shadow-md transition-colors"
+        >
           Book Seat
         </button>
       </div>

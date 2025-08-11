@@ -2,12 +2,18 @@ import { useState } from "react";
 import { Eye, EyeOff, X, Search, Calendar } from "lucide-react";
 import drImg from "../../assets/images/drImg.png";
 import scopeLogo from "../../assets/images/scope-logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [hospitalId, setHospitalId] = useState("");
   const [userId, setUserId] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleCloseClick = () => {
+    navigate("/");
+  };
 
   return (
     <div className="flex items-center justify-center">
@@ -46,7 +52,10 @@ export default function Login() {
       {/* Right Side - Login Form */}
       <div className="bg-white w-1/3">
         {/* Close Button */}
-        <button className="absolute top-0 right-0 text-gray-400 hover:text-gray-600 transition-colors">
+        <button
+          onClick={handleCloseClick}
+          className="absolute top-0 right-0 text-gray-400 hover:text-gray-600 transition-colors"
+        >
           <X className="w-6 h-6" />
         </button>
 

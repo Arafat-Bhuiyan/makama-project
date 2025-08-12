@@ -5,6 +5,8 @@ import { RightSidebar } from "./RightSidebar";
 import { useState } from "react";
 import Prescription from "./Prescription";
 import SeatBookingForm from "./SeatBookingForm";
+import AppointmentTable from "./Appointment/Appointment";
+import PatientTable from "./Patient/Patient";
 
 export default function Dashboard() {
   const [currentComponent, setCurrentComponent] = useState("Dashboard"); // New state to track the active component
@@ -15,7 +17,10 @@ export default function Dashboard() {
   return (
     <div className="flex h-screen bg-white">
       {/* Sidebar */}
-      <Sidebar />
+      <Sidebar
+        currentComponent={currentComponent}
+        onMenuClick={handleComponentChange}
+      />
       {/* Main Content */}
       <div className="flex-1 overflow-auto">
         {/* Header */}
@@ -31,13 +36,14 @@ export default function Dashboard() {
           {/* Conditionally render the component based on the state */}
           {currentComponent === "Dashboard" && (
             <div className="grid grid-cols-12 gap-6">
-              {/* Stats Cards */}
+              {/* Status Cards */}
               <StartCards />
               {/* Right Sidebar */}
               <RightSidebar handleComponentChange={handleComponentChange} />
             </div>
           )}
-
+          {currentComponent === "Appointment" && <AppointmentTable />}
+          {currentComponent === "Patient" && <PatientTable />}
           {currentComponent === "Prescription" && (
             <Prescription handleComponentChange={handleComponentChange} />
           )}

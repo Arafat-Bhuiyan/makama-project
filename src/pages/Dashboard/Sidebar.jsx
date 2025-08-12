@@ -6,12 +6,12 @@ import {
   Settings,
   MessageSquare,
   User,
-  LogOut 
+  LogOut,
 } from "lucide-react";
 import drScope from "../../assets/images/scope-logo.png";
 import arrorDown from "../../assets/images/arrow-down.png";
 
-export const Sidebar = () => {
+export const Sidebar = ({ currentComponent, onMenuClick }) => {
   const menuItems = [
     { icon: Grid, label: "Dashboard", active: true },
     { icon: Calendar, label: "Appointment" },
@@ -39,12 +39,13 @@ export const Sidebar = () => {
         <ul className="space-y-2">
           {menuItems.map((item, index) => {
             const Icon = item.icon;
+            const isActive = currentComponent === item.label;
             return (
               <li key={index}>
                 <button
-                  onClick={() => setSelectedMenuItem(item.label)}
+                  onClick={() => onMenuClick(item.label)}
                   className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-colors ${
-                    item.active
+                    isActive
                       ? "bg-blue-500 text-white"
                       : "text-gray-600 hover:bg-gray-100"
                   }`}

@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../layouts/Layout";
 import { Home } from "../pages/Home/Home";
 import Login from "../pages/Auth/Login";
-import PatientTable from "../pages/Dashboard/Patient/Patient";
+import NormalReport from "../pages/Dashboard/Patient/NormalReport";
 
 const router = createBrowserRouter([
   {
@@ -19,8 +19,8 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: "/patients",
-        element: <PatientTable />,
+        path: "/example",
+        element: <NormalReport />,
       },
     ],
   },

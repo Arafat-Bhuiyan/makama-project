@@ -15,7 +15,7 @@ const Prescription = ({ handleComponentChange }) => {
 
   const handleFind = () => {
     // Logic for fetching user data by ID can go here
-    console.log("Find button clicked for UserID:", userID);
+    console.log("UserID:", userID);
   };
 
   const handleSubmit = () => {
@@ -120,7 +120,7 @@ const Prescription = ({ handleComponentChange }) => {
             <input
               type="text"
               className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={userID}
+              value={problem}
               onChange={(e) => setProblem(e.target.value)}
               required
             />
@@ -135,7 +135,7 @@ const Prescription = ({ handleComponentChange }) => {
             className="w-full px-4 py-2 border border-gray-300 rounded-xl"
             rows="7"
             placeholder="Type Here"
-            value={detailsSymptoms}
+            value={medicine}
             onChange={(e) => setMedicine(e.target.value)}
           />
         </div>
@@ -148,7 +148,7 @@ const Prescription = ({ handleComponentChange }) => {
             className="w-full px-4 py-2 border border-gray-300 rounded-xl my-5"
             rows="7"
             placeholder="Type test name"
-            value={detailsSymptoms}
+            value={testName}
             onChange={(e) => setTestName(e.target.value)}
           />
         </div>

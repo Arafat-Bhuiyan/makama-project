@@ -3,6 +3,7 @@ import { Layout } from "../layouts/Layout";
 import { Home } from "../pages/Home/Home";
 import Login from "../pages/Auth/Login";
 import NormalReport from "../pages/Dashboard/Patient/NormalReport";
+import { ComplaintsForm } from "../pages/Dashboard/Complaints/ComplaintsForm";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/example",
         element: <NormalReport />,
+      },
+      {
+        path: "/complaintsForm",
+        element: <ComplaintsForm />,
       },
     ],
   },

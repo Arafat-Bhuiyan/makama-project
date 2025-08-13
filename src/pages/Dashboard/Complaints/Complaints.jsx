@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const statusColors = {
   Solved: "bg-green-300 text-green-700",
@@ -15,6 +16,7 @@ export default function Complaints() {
   const [statsFilter, setStatsFilter] = useState("Status");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("/public/complaints.json")
@@ -56,6 +58,10 @@ export default function Complaints() {
     if (page >= 1 && page <= pageCount) setCurrentPage(page);
   };
 
+  const handleComplaintsForm = () => {
+    navigate("/complaintsForm");
+  };
+
   return (
     <div className="max-w-6xl mx-auto bg-white p-6 rounded-xl shadow-xl">
       <div className="w-full flex justify-between items-center mb-4">
@@ -86,7 +92,10 @@ export default function Complaints() {
             </svg>
           </div>
 
-          <button className="bg-blue-300 hover:bg-blue-400 text-white px-4 py-2 rounded-lg cursor-pointer">
+          <button
+            onClick={handleComplaintsForm}
+            className="bg-blue-300 hover:bg-blue-400 text-white px-4 py-2 rounded-lg cursor-pointer"
+          >
             Complain
           </button>
 

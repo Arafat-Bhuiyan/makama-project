@@ -14,7 +14,7 @@ export default function PatientTable() {
 
   const [search, setSearch] = useState("");
   const [statsFilter, setStatsFilter] = useState("Status");
-  const [timeFilter, setTimeFilter] = useState("Today");
+  const [problemFilter, setProblemFilter] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
   const [showReport, setShowReport] = useState(false);
@@ -26,7 +26,7 @@ export default function PatientTable() {
 
   const handleReportShow2 = () => {
     setShowReport(false);
-  }
+  };
 
   useEffect(() => {
     fetch("/public/patients.json")
@@ -49,14 +49,16 @@ export default function PatientTable() {
 
   // Filtering and searching logic (can be expanded as needed)
   const filteredData = patientsData.filter((item) => {
+    const searchLower = search.toLowerCase();
     const matchesSearch =
       item.name.toLowerCase().includes(search.toLowerCase()) ||
-      item.id.includes(search);
+      item.id.includes(search) ||
+      item.mobile.includes(search) ||
+      item.problem.toLowerCase().includes(searchLower);
     const matchesStats =
       statsFilter === "Status" || item.status === statsFilter;
-    const matchesTime = timeFilter === "Today" || timeFilter === "Tomorrow"; // example logic
 
-    return matchesSearch && matchesStats && matchesTime;
+    return matchesSearch && matchesStats;
   });
 
   // Pagination logic
@@ -121,15 +123,6 @@ export default function PatientTable() {
                   Emergency
                 </option>
               </select>
-
-              <select
-                value={timeFilter}
-                onChange={(e) => setTimeFilter(e.target.value)}
-                className="bg-blue-300 text-white px-4 py-2 rounded-lg cursor-pointer"
-              >
-                <option>Today</option>
-                <option>Tomorrow</option>
-              </select>
             </div>
           </div>
 
@@ -140,7 +133,7 @@ export default function PatientTable() {
                 <th className="px-4 py-3">SL</th>
                 <th className="px-4 py-3">ID</th>
                 <th className="px-4 py-3">Name</th>
-                <th className="px-4 py-3">Time</th>
+                <th className="px-4 py-3">Problem</th>
                 <th className="px-4 py-3">Mobile Number</th>
                 <th className="px-4 py-3">Status</th>
               </tr>
@@ -156,7 +149,7 @@ export default function PatientTable() {
                 paginatedData.map((item, index) => (
                   <tr
                     key={index}
-                    className="border-b border-gray-200 hover:bg-blue-50 transition-colors"
+                    className="border-b border-gray-200 hover:bg-blue-50 transition-colors font-medium text-base"
                     onClick={handleReportShow}
                   >
                     <td className="px-4 py-2">
@@ -164,7 +157,7 @@ export default function PatientTable() {
                     </td>
                     <td className="px-4 py-2">{item.id}</td>
                     <td className="px-4 py-2">{item.name}</td>
-                    <td className="px-4 py-2">{item.time}</td>
+                    <td className="px-4 py-2">{item.problem}</td>
                     <td className="px-4 py-2">{item.mobile}</td>
                     <td className="px-4 py-2">
                       <span
@@ -225,7 +218,7 @@ export default function PatientTable() {
         </div>
       ) : (
         <div>
-          <NormalReport handleReportShow2={handleReportShow2}/>
+          <NormalReport handleReportShow2={handleReportShow2} />
         </div>
       )}
     </div>

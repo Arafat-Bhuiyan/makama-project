@@ -8,6 +8,7 @@ import SeatBookingForm from "./SeatBookingForm";
 import AppointmentTable from "./Appointment/Appointment";
 import PatientTable from "./Patient/Patient";
 import { Report } from "./Report/Report";
+import Complaints from "./Complaints/Complaints";
 
 export default function Dashboard() {
   const [currentComponent, setCurrentComponent] = useState("Dashboard"); // New state to track the active component
@@ -46,6 +47,7 @@ export default function Dashboard() {
           {currentComponent === "Appointment" && <AppointmentTable />}
           {currentComponent === "Patient" && <PatientTable />}
           {currentComponent === "Report" && <Report />}
+          {currentComponent === "Complaints" && <Complaints />}
           {currentComponent === "Prescription" && (
             <Prescription handleComponentChange={handleComponentChange} />
           )}

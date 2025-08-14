@@ -1,0 +1,120 @@
+[
+  {
+    "section": "Company Registration Number",
+    "content": "2024/425757/07"
+  },
+  {
+    "section": "Introduction",
+    "content": "At Open Health, we prioritize the privacy and security of our users and their data. This Privacy Policy explains how we collect, use, store, and protect personal and health-related information. By using our platform, you agree to the terms outlined in this policy."
+  },
+  {
+    "section": "1. Information We Collect",
+    "subSections": [
+      {
+        "title": "1.1 Personal Information",
+        "list": [
+          "Name, surname, and contact details (email, phone number)",
+          "Identification numbers (where applicable)",
+          "Professional credentials (for healthcare providers)"
+        ]
+      },
+      {
+        "title": "1.2 Health Information",
+        "list": [
+          "Patient demographics",
+          "Medical history, diagnoses, treatment plans, and prescriptions",
+          "Laboratory test results",
+          "Appointment and consultation records"
+        ]
+      },
+      {
+        "title": "1.3 System and Usage Data",
+        "list": [
+          "Login details and authentication logs",
+          "IP address and device information",
+          "User interactions with the platform for security and analytics"
+        ]
+      },
+      {
+        "title": "1.4 Payment Information",
+        "list": [
+          "Billing details (for institutions using paid services)",
+          "Transaction history"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "2. How We Use Your Information",
+    "list": [
+      "Provide healthcare management services",
+      "Ensure compliance with medical regulations",
+      "Improve platform functionality and user experience",
+      "Communicate with users about system updates, security alerts, and support requests",
+      "Prevent fraud, unauthorised access, and security breaches"
+    ]
+  },
+  {
+    "section": "3. Data Security Measures",
+    "list": [
+      "Encryption: Protecting data in transit and at rest",
+      "Access Control: Restricting access to authorized personnel only",
+      "Audit Logs: Tracking user activities for compliance and security",
+      "Regular Security Assessments: Identifying and mitigating risks"
+    ],
+    "content": "Despite these efforts, no system is completely secure. Users are responsible for safeguarding their login credentials."
+  },
+  {
+    "section": "4. Data Sharing and Disclosure",
+    "list": [
+      "With Authorized Healthcare Providers: To facilitate patient care and record-keeping",
+      "With Third-Party Service Providers: For cloud storage, payment processing, and technical support (subject to strict confidentiality agreements)",
+      "As Required by Law: To comply with legal obligations, court orders, or government regulations",
+      "In Case of Business Transfers: If Open Health is acquired or merged, data may be transferred under similar privacy safeguards"
+    ]
+  },
+  {
+    "section": "5. Data Retention",
+    "list": [
+      "Comply with legal and medical record-keeping requirements",
+      "Provide ongoing healthcare services",
+      "Resolve disputes and enforce agreements"
+    ],
+    "content": "Users may request data deletion, subject to compliance with healthcare laws."
+  },
+  {
+    "section": "6. User Rights and Choices",
+    "list": [
+      "Access Personal Data: Request a copy of stored personal information",
+      "Correct Data: Update or rectify inaccuracies",
+      "Withdraw Consent: Opt out of marketing communications",
+      "Request Deletion: Request removal of personal data (subject to legal requirements)"
+    ],
+    "content": "To exercise these rights, contact us at info@openhealth.co.za"
+  },
+  {
+    "section": "7. Compliance with Healthcare Regulations",
+    "list": [
+      "Protection of Personal Information Act (POPIA)",
+      "National Health Act",
+      "Health Professions Council of South Africa (HPCSA) Regulations"
+    ],
+    "content": "Users must also ensure compliance with applicable medical data protection laws."
+  },
+  {
+    "section": "8. International Data Transfers",
+    "content": "If Open Health stores or processes data outside South Africa, we ensure compliance with data protection laws and secure transfer mechanisms."
+  },
+  {
+    "section": "9. Cookies and Tracking Technologies",
+    "content": "We may use cookies to enhance user experience and gather analytics. Users can manage cookie preferences through browser settings."
+  },
+  {
+    "section": "10. Updates to this Privacy Policy",
+    "content": "We may update this policy periodically. Users will be notified of significant changes, and continued use of Open Health constitutes acceptance of the revised policy."
+  },
+  {
+    "section": "11. Contact Information",
+    "content": "For privacy-related inquiries, contact us at: Email: info@openhealth.co.za"
+  }
+]

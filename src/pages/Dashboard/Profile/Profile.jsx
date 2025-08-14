@@ -56,7 +56,7 @@ export default function Profile() {
   };
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-xl">
+    <div className="bg-white p-6 border rounded-xl shadow-xl">
       <div className="flex items-center gap-8">
         <div className="relative">
           <img src={profileImg} alt="" className="w-20 h-20" />

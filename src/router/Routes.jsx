@@ -2,8 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../layouts/Layout";
 import { Home } from "../pages/Home/Home";
 import Login from "../pages/Auth/Login";
-import NormalReport from "../pages/Dashboard/Patient/NormalReport";
 import { ComplaintsForm } from "../pages/Dashboard/Complaints/ComplaintsForm";
+import { NursesHome } from "../pages/NursesHome/NursesHome";
+import NurseNormalReport from "../pages/NursesHome/NurseNormalReport";
+import NursePrescription from "../pages/NursesHome/NursePrescription";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,18 @@ const router = createBrowserRouter([
       {
         path: "/complaintsForm",
         element: <ComplaintsForm />,
+      },
+      {
+        path: "/nursesHome",
+        element: <NursesHome />,
+      },
+      {
+        path: "/nurseNormalReport",
+        element: <NurseNormalReport />,
+      },
+      {
+        path: "/nursePrescription",
+        element: <NursePrescription />,
       },
     ],
   },

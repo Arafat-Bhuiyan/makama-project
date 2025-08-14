@@ -63,7 +63,7 @@ export default function Complaints() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto bg-white p-6 rounded-xl shadow-xl">
+    <div className=" bg-white p-6 border rounded-xl shadow-xl">
       <div className="w-full flex justify-between items-center mb-4">
         <h1 className="text-xl font-semibold">Complaints</h1>
         <div className="flex items-center gap-3">

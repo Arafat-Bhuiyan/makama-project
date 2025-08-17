@@ -24,7 +24,7 @@ const NursePrescription = ({ handleComponentChange }) => {
   };
 
   return (
-    <div className=" mx-auto bg-white shadow-xl border rounded-xl p-6">
+    <div className="mx-auto bg-white shadow-xl border rounded-xl p-6">
       <div className="flex justify-start items-center pb-3">
         <ChevronLeft color="#3371EB" />
         <button className="text-[#3371EB] font-semibold text-xl">Back</button>

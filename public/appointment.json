@@ -4,321 +4,321 @@
     "name": "Makama",
     "time": "09:00 AM",
     "mobile": "+145985",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12569",
     "name": "Rafsun",
     "time": "09:30 AM",
     "mobile": "+145986",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12570",
     "name": "Pial",
     "time": "10:00 AM",
     "mobile": "+145987",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12571",
     "name": "Ron",
     "time": "10:30 AM",
     "mobile": "+145988",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12572",
     "name": "Ramisa",
     "time": "11:00 AM",
     "mobile": "+145989",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12573",
     "name": "Ibrahim",
     "time": "11:30 AM",
     "mobile": "+145990",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12574",
     "name": "Jon",
     "time": "12:00 PM",
     "mobile": "+145991",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12575",
     "name": "Mir",
     "time": "12:30 PM",
     "mobile": "+145992",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12576",
     "name": "Rafi",
     "time": "01:00 PM",
     "mobile": "+145993",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12577",
     "name": "Nadia",
     "time": "01:30 PM",
     "mobile": "+145994",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12578",
     "name": "Tariq",
     "time": "02:00 PM",
     "mobile": "+145995",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12579",
     "name": "Sara",
     "time": "02:30 PM",
     "mobile": "+145996",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12580",
     "name": "Amin",
     "time": "03:00 PM",
     "mobile": "+145997",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12581",
     "name": "Lina",
     "time": "03:30 PM",
     "mobile": "+145998",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12582",
     "name": "Zahid",
     "time": "04:00 PM",
     "mobile": "+145999",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12583",
     "name": "Mona",
     "time": "04:30 PM",
     "mobile": "+146000",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12584",
     "name": "Fahim",
     "time": "05:00 PM",
     "mobile": "+146001",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12585",
     "name": "Rina",
     "time": "05:30 PM",
     "mobile": "+146002",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12586",
     "name": "Kamal",
     "time": "06:00 PM",
     "mobile": "+146003",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12587",
     "name": "Nila",
     "time": "06:30 PM",
     "mobile": "+146004",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12588",
     "name": "Jahid",
     "time": "07:00 PM",
     "mobile": "+146005",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12589",
     "name": "Tina",
     "time": "07:30 PM",
     "mobile": "+146006",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12590",
     "name": "Rahat",
     "time": "08:00 PM",
     "mobile": "+146007",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12591",
     "name": "Anika",
     "time": "08:30 PM",
     "mobile": "+146008",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12592",
     "name": "Salim",
     "time": "09:00 PM",
     "mobile": "+146009",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12593",
     "name": "Lina",
     "time": "09:30 PM",
     "mobile": "+146010",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12594",
     "name": "Jamal",
     "time": "10:00 PM",
     "mobile": "+146011",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12595",
     "name": "Nadim",
     "time": "10:30 PM",
     "mobile": "+146012",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12596",
     "name": "Rumi",
     "time": "11:00 PM",
     "mobile": "+146013",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12597",
     "name": "Saba",
     "time": "11:30 PM",
     "mobile": "+146014",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12598",
     "name": "Riaz",
     "time": "12:00 AM",
     "mobile": "+146015",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12599",
     "name": "Farah",
     "time": "12:30 AM",
     "mobile": "+146016",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12600",
     "name": "Nazim",
     "time": "01:00 AM",
     "mobile": "+146017",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12601",
     "name": "Mina",
     "time": "01:30 AM",
     "mobile": "+146018",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12602",
     "name": "Sami",
     "time": "02:00 AM",
     "mobile": "+146019",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12603",
     "name": "Rana",
     "time": "02:30 AM",
     "mobile": "+146020",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12604",
     "name": "Lara",
     "time": "03:00 AM",
     "mobile": "+146021",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12605",
     "name": "Javed",
     "time": "03:30 AM",
     "mobile": "+146022",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12606",
     "name": "Sonia",
     "time": "04:00 AM",
     "mobile": "+146023",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12607",
     "name": "Adil",
     "time": "04:30 AM",
     "mobile": "+146024",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12608",
     "name": "Rina",
     "time": "05:00 AM",
     "mobile": "+146025",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12609",
     "name": "Nabil",
     "time": "05:30 AM",
     "mobile": "+146026",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12610",
     "name": "Tina",
     "time": "06:00 AM",
     "mobile": "+146027",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12611",
     "name": "Firoz",
     "time": "06:30 AM",
     "mobile": "+146028",
-    "status": "New"
+    "status": "Completed"
   },
   {
     "id": "12612",
     "name": "Nazia",
     "time": "07:00 AM",
     "mobile": "+146029",
-    "status": "Old"
+    "status": "Pending"
   },
   {
     "id": "12613",
     "name": "Shafiq",
     "time": "07:30 AM",
     "mobile": "+146030",
-    "status": "New"
+    "status": "Completed"
   }
 ]

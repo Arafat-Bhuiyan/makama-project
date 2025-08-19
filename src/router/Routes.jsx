@@ -10,6 +10,9 @@ import { PharmacistsHome } from "../pages/Pharmacists/PharmacistsHome";
 import PharmacyOrderInterface from "../pages/Pharmacists/PharmacyOrderInterface";
 import AddProductModal from "../pages/Pharmacists/AddProduct";
 import PharmacistsOrder from "../pages/Pharmacists/PharmacistsOrder";
+import Setting from "../pages/Dashboard/Setting.jsx/Setting";
+import Complaints from "../pages/Dashboard/Complaints/Complaints";
+import { LabHome } from "../pages/Lab/LabHome";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +59,18 @@ const router = createBrowserRouter([
       {
         path: "/pharmacistsOrder",
         element: <PharmacistsOrder />,
+      },
+      {
+        path: "/pharmacistsSettings",
+        element: <Setting />,
+      },
+      {
+        path: "/pharmacistsComplain",
+        element: <Complaints />,
+      },
+      {
+        path: "/labHome",
+        element: <LabHome />,
       },
     ],
   },

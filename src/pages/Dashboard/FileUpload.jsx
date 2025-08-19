@@ -1,7 +1,9 @@
-import React from "react";
 import { Paperclip, CircleX } from "lucide-react";
+import { useState } from "react";
 
-export default function FileUpload({ files, setFiles }) {
+export default function FileUpload() {
+  const [files, setFiles] = useState([]);
+
   const handleFileChange = (e) => {
     const selectedFiles = Array.from(e.target.files);
     setFiles((prevFiles) => [...prevFiles, ...selectedFiles]);

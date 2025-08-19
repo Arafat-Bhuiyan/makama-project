@@ -1,7 +1,8 @@
-import prescription_doc from "../../assets/images/prescription_doc.png";
+import test from "../../assets/images/test.png";
 import revenue from "../../assets/images/revenue.png";
 import order_value from "../../assets/images/order_value.png";
 import OrderTable from "../Pharmacists/OrderTable";
+import TestTable from "./TestTable";
 
 export const LabHome = () => {
   return (
@@ -10,21 +11,21 @@ export const LabHome = () => {
       <div className="flex items-center justify-between">
         <div className="flex w-80 justify-between items-center p-4 shadow-xl rounded-lg">
           <div className="flex flex-col gap-4">
-            <h1 className="font-semibold text-base">Total prescription</h1>
+            <h1 className="font-semibold text-base">Total Wetting</h1>
             <p className="font-semibold text-xl text-green-500">125</p>
           </div>
-          <img src={prescription_doc} alt="" />
+          <img src={test} alt="" />
         </div>
         <div className="flex  w-80 justify-between items-center p-4 shadow-xl gap-6 rounded-lg">
           <div className="flex flex-col gap-4">
-            <h1 className="font-semibold text-base">Total Revenue</h1>
+            <h1 className="font-semibold text-base">Report Complete</h1>
             <p className="font-semibold text-xl text-green-500">125</p>
           </div>
           <img src={revenue} alt="" />
         </div>
         <div className="flex w-80 justify-between items-center p-4 shadow-xl gap-6 rounded-lg">
           <div className="flex flex-col gap-4">
-            <h1 className="font-semibold text-base">Average Order value</h1>
+            <h1 className="font-semibold text-base">Total Sample  Collect</h1>
             <p className="font-semibold text-xl text-green-500">125</p>
           </div>
           <img src={order_value} alt="" />
@@ -36,7 +37,7 @@ export const LabHome = () => {
         {/* Patient Visit Chart */}
         <div className="bg-white p-6 rounded-md border shadow-sm">
           <div className="flex items-center justify-between mb-6">
-            <h3 className="text-lg font-medium text-gray-900">Order</h3>
+            <h3 className="text-lg font-medium text-gray-900">Revenue</h3>
             <div className="flex items-center space-x-2">
               <span className="text-sm text-gray-500">Sort by</span>
               <select className="text-sm border rounded px-2 py-1">
@@ -116,7 +117,7 @@ export const LabHome = () => {
       </div>
 
       {/* Table */}
-      <OrderTable />
+      <TestTable />
     </div>
   );
 };

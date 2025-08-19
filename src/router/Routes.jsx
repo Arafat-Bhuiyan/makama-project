@@ -13,6 +13,8 @@ import PharmacistsOrder from "../pages/Pharmacists/PharmacistsOrder";
 import Setting from "../pages/Dashboard/Setting.jsx/Setting";
 import Complaints from "../pages/Dashboard/Complaints/Complaints";
 import { LabHome } from "../pages/Lab/LabHome";
+import LabNormalReport from "../pages/Lab/LabNormalReport";
+import LabPrescription from "../pages/Lab/LabPrescription";
 
 const router = createBrowserRouter([
   {
@@ -71,6 +73,14 @@ const router = createBrowserRouter([
       {
         path: "/labHome",
         element: <LabHome />,
+      },
+      {
+        path: "/labNormalReport",
+        element: <LabNormalReport />,
+      },
+      {
+        path: "/labPrescription",
+        element: <LabPrescription />,
       },
     ],
   },

@@ -8,6 +8,7 @@ import NurseNormalReport from "../pages/NursesHome/NurseNormalReport";
 import NursePrescription from "../pages/NursesHome/NursePrescription";
 import { PharmacistsHome } from "../pages/Pharmacists/PharmacistsHome";
 import PharmacyOrderInterface from "../pages/Pharmacists/PharmacyOrderInterface";
+import AddProductModal from "../pages/Pharmacists/AddProduct";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/pharmacyOrderInterface",
         element: <PharmacyOrderInterface />,
+      },
+      {
+        path: "/addProductModal",
+        element: <AddProductModal />,
       },
     ],
   },

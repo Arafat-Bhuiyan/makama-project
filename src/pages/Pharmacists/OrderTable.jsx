@@ -15,6 +15,7 @@ export default function OrderTable() {
 
   const [search, setSearch] = useState("");
   const [statsFilter, setStatsFilter] = useState("Status");
+  const [billStatusFilter, setBillStatusFilter] = useState("Bill Status");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
 
@@ -45,7 +46,10 @@ export default function OrderTable() {
     const matchesStats =
       statsFilter === "Status" || item.status === statsFilter;
 
-    return matchesSearch && matchesStats;
+    const matchesBillStatus =
+      billStatusFilter === "Bill Status" || item.bill === billStatusFilter;
+
+    return matchesSearch && matchesStats && matchesBillStatus;
   });
 
   // Pagination logic
@@ -91,8 +95,9 @@ export default function OrderTable() {
             </svg>
           </div>
           <select
-            value={statsFilter}
-            onChange={(e) => setStatsFilter(e.target.value)}
+            value={billStatusFilter}
+            re
+            onChange={(e) => setBillStatusFilter(e.target.value)}
             className="bg-blue-300 text-white px-4 py-2 gap-2 rounded-xl cursor-pointer"
           >
             <option className="rounded-xl bg-blue-300 text-white mb-2">
@@ -148,9 +153,6 @@ export default function OrderTable() {
                 key={index}
                 className="border-b border-gray-200 hover:bg-blue-50 transition-colors"
               >
-                <td className="px-4 py-2">
-                  {(currentPage - 1) * itemsPerPage + index + 1}
-                </td>
                 <td className="px-4 py-2">{item.id}</td>
                 <td className="px-4 py-2">{item.name}</td>
                 <td className="px-4 py-2">{item.date}</td>

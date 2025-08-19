@@ -9,9 +9,9 @@
   {
     "id": "12569",
     "name": "Rafsun",
-    "status": "Pending",
+    "status": "Completed",
     "date": "12/04/25",
-    "bill": "Unpaid"
+    "bill": "Paid"
   },
   {
     "id": "12570",
@@ -30,9 +30,9 @@
   {
     "id": "12572",
     "name": "Ramisa",
-    "status": "Pending",
+    "status": "Completed",
     "date": "12/04/25",
-    "bill": "Unpaid"
+    "bill": "Paid"
   },
   {
     "id": "12573",
